@@ -1,0 +1,59 @@
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: fixed; /* Fixa o menu na lateral */
+    top: 0;
+}
+
+.poema-link {
+    color: rgba(177, 87, 171, 0.651); /* Cor do texto */
+    padding: 0;
+    top: 10px;
+    right: 100%;
+}
+
+.menu-icon {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 20;
+    position: fixed;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    position: absolute;
+    top: 35px; 
+    left: 0;
+    padding: 0; 
+    margin: 0; 
+    display: none;
+    min-width: 100px;
+    z-index: 1;
+    font-size: small;
+    background-color: #fbe3e3;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #c765c7;
+    padding: 3px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #a8409e23;
+}
+/* CSS adicional para manter o submenu visível depois de clicar nele */
+.dropdown.open .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,100 @@
+/*cabeça*/
+body {
+    background-image: url("img/back.jpeg");
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    line-height: 1.6;
+    }
+/*tags de texto*/
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    white-space: nowrap;
+    }
+
+h5 {
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+    font-size: 20px;
+}
+p {
+    text-align: center;
+    margin: 35px;
+    }
+
+li {
+    text-align: center;
+    margin: 35px;
+    }
+
+/*corpo*/
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+    padding: 10px;
+}
+img {
+    margin-left: 60px;
+    }
+
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 15px;
+    background-color: #fbe3e3;
+    color: white;
+  }
+
+.bloco {
+    right: 27%;
+    background-image: linear-gradient(180deg, 
+    rgb(248, 197, 206), #d6c1cf
+    );
+    padding: 4.88rem;
+    border-radius: 5rem;
+}
+
+/*Barra de rolamento*/
+
+::-webkit-scrollbar-track {
+    background: #c5829f; /* Cor de fundo do trilho */
+    border-radius: 10px; /* Borda arredondada do trilho */
+    }
+::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem vertical */
+    height: 12px; /* Altura da barra de rolagem horizontal */
+    }
+::-webkit-scrollbar-thumb {
+    background-color: #8f3678; /* cor do trilho */
+    border-radius: 6px; /* arredondamento do polegar */
+    }
+::-webkit-scrollbar-thumb:hover {
+    background: #72154b; /* Cor do polegar ao passar o mouse */
+    }
+/*rodapé*/
+
+.notas {
+    background-image: linear-gradient(180deg,
+    #e9b1c9, #f7afce
+    );
+    background-position-x: 50%;
+    border-radius: 20px;
+    }
+.inclinar-esquerda {
+    transform: rotate(-30deg);
+    }
+
+.inclinar-direita {
+    transform: rotate(25deg);
+    }
