@@ -1,3 +1,6 @@
+html {
+    font-size: 62.5%;
+}
 .menu {
     list-style-type: none;
     padding: 0;
@@ -27,16 +30,16 @@
 }
 .dropdown-content {
     position: absolute;
-    top: 35px; 
+    top: 4rem; 
     left: 0;
     padding: 0; 
     margin: 0; 
     display: none;
     min-width: 100px;
     z-index: 1;
-    font-size: small;
+    font-size: 1rem;
     background-color: #fbe3e3;
-
+    text-align: center;
 }
 
 .dropdown:hover .dropdown-content {
@@ -45,7 +48,7 @@
 
 .dropdown-content a {
     color: #c765c7;
-    padding: 3px 0px;
+    padding: 0.8rem 0rem;
     text-decoration: none;
     display: block;
 }
