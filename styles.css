@@ -1,68 +1,127 @@
 /*cabeça*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Monserrat", sans-serif;
+}
+
+/* tags */
+
 body {
     background-image: url("img/back.jpeg");
-    padding: 20px;
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
-    font-family: Arial, sans-serif;
-    margin: 0; 
-    padding: 0;
-    line-height: 1.6;
     }
-/*tags de texto*/
-h1 {
-    text-align: center;
-    margin-top: 30px;
-    white-space: nowrap;
-    }
-
-h5 {
-    text-align: center;
-    padding: 20px;
-    line-height: 2;
-    font-size: 20px;
-}
-p {
-    text-align: center;
-    margin: 35px;
-    }
-
-li {
-    text-align: center;
-    margin: 35px;
-    }
-
+    
 /*corpo*/
-.content {
-    display: flex;
-    justify-content: center;
-    gap: 0;
-    padding: 10px;
-}
-img {
-    margin-left: 60px;
-    }
 
+/* cabeçalho */
 .header{
     position: fixed;
     display: flex;
     width: 100%;
     top: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 15px;
+    padding: 1.7rem 4rem;
     background-color: #fbe3e3;
-    color: white;
+    height: 4rem;
+    z-index: 1;
   }
 
+/* main */
+
 .bloco {
-    right: 27%;
-    background-image: linear-gradient(180deg, 
-    rgb(248, 197, 206), #d6c1cf
-    );
-    padding: 4.88rem;
-    border-radius: 5rem;
+    position: relative;
+    background-image: linear-gradient(
+        40deg,
+        #db8ba6,
+        rgb(245, 171, 221));
+    display: inline-block;
+    border-radius: 3rem;
+    width: 40vw;
+    margin: 7vw 0;
+    height: 33vh;
+    text-align: center;
+    left: 31.5vw;
+}
+
+.titulo-h2 {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.texto-poemas {
+    margin: 0.8rem;
+    font-size: 1vw;
+    height: 1.5vw;
+    font-family: "Cormorant", sans-serif;
+    font-weight: bold;
+}
+
+address p {
+    font-style: italic;
+    font-size: 1.2vw;
+    margin-bottom: 0.2vw;
+}
+/* footer */
+
+/* imagens */
+.bloco-imagens {
+    display: inline-block;
+    position: relative;
+    height: 10vw;
+    width: 95vw;
+    padding-left: 6vw;
+}
+
+.inclinar-direita {
+    rotate: 30deg;
+    margin-left: 2vw;
+    width: 12vw;
+}
+
+.inclinar-esquerda {
+    rotate: -30deg;
+    margin-left: 1.3vw;
+    width: 12vw;
+}
+
+/* notas */
+
+.divisória-notas {
+    background-image: linear-gradient(
+        180deg,
+        #c380c5,
+        #f892d1
+        );
+    position: relative;
+    display: inline-block;
+    border-radius: 3rem;
+    width: 25vw;
+    margin: 7vw 0;
+    height: 20vw;
+    text-align: center;
+    left: 0;
+}
+
+.notas {
+    font-style: inherit;
+    font-size: 1vw;
+}
+
+/* musicas */
+
+.musicas {
+    position: relative;
+    display: inline-block;
+    width: 25vw;
+    bottom: -20vh;
+    margin-left: 2rem;
+    height: 0.5vw;
 }
 
 /*Barra de rolamento*/
@@ -81,20 +140,4 @@ img {
     }
 ::-webkit-scrollbar-thumb:hover {
     background: #72154b; /* Cor do polegar ao passar o mouse */
-    }
-/*rodapé*/
-
-.notas {
-    background-image: linear-gradient(180deg,
-    #e9b1c9, #f7afce
-    );
-    background-position-x: 50%;
-    border-radius: 20px;
-    }
-.inclinar-esquerda {
-    transform: rotate(-30deg);
-    }
-
-.inclinar-direita {
-    transform: rotate(25deg);
     }
