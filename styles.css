@@ -1,143 +1,239 @@
-/*cabeça*/
+/* resolucao de bugs */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-size: 62.5%;
-    font-family: "Monserrat", sans-serif;
+header img {
+    height: 2rem; /* Ajuste conforme necessário */
+    width: auto; /* Mantém a proporção */
 }
 
-/* tags */
-
-body {
-    background-image: url("img/back.jpeg");
-    background-size: cover;
-    background-position: center;
-    }
-    
-/*corpo*/
-
-/* cabeçalho */
-.header{
-    position: fixed;
-    display: flex;
-    width: 100%;
-    top: 0;
-    padding: 1.7rem 4rem;
-    background-color: #fbe3e3;
-    height: 4rem;
-    z-index: 1;
-  }
-
-/* main */
-
-.bloco {
-    position: relative;
-    background-image: linear-gradient(
-        40deg,
-        #db8ba6,
-        rgb(245, 171, 221));
-    display: inline-block;
-    border-radius: 3rem;
-    width: 40vw;
-    margin: 7vw 0;
-    height: 33vh;
-    text-align: center;
-    left: 31.5vw;
+div img {
+    height: 30rem;
 }
 
-.titulo-h2 {
-    font-size: 1.8rem;
-    font-style: italic;
+/* Coisas do site */
+
+#Corpo {
+    display: none;
 }
-
-.texto-poemas {
-    margin: 0.8rem;
-    font-size: 1vw;
-    height: 1.5vw;
-    font-family: "Cormorant", sans-serif;
-    font-weight: bold;
-}
-
-address p {
-    font-style: italic;
-    font-size: 1.2vw;
-    margin-bottom: 0.2vw;
-}
-/* footer */
-
-/* imagens */
-.bloco-imagens {
-    display: inline-block;
-    position: relative;
-    height: 10vw;
-    width: 95vw;
-    padding-left: 6vw;
-}
-
-.inclinar-direita {
-    rotate: 30deg;
-    margin-left: 2vw;
-    width: 12vw;
-}
-
-.inclinar-esquerda {
-    rotate: -30deg;
-    margin-left: 1.3vw;
-    width: 12vw;
-}
-
-/* notas */
-
-.divisória-notas {
-    background-image: linear-gradient(
-        180deg,
-        #c380c5,
-        #f892d1
-        );
-    position: relative;
-    display: inline-block;
-    border-radius: 3rem;
-    width: 25vw;
-    margin: 7vw 0;
-    height: 20vw;
-    text-align: center;
-    left: 0;
-}
-
-.notas {
-    font-style: inherit;
-    font-size: 1vw;
-}
-
-/* musicas */
-
-.musicas {
-    position: relative;
-    display: inline-block;
-    width: 25vw;
-    bottom: -20vh;
-    margin-left: 2rem;
-    height: 0.5vw;
-}
-
-/*Barra de rolamento*/
 
 ::-webkit-scrollbar-track {
-    background: #c5829f; /* Cor de fundo do trilho */
-    border-radius: 10px; /* Borda arredondada do trilho */
+    background: #ff8df5; /* Cor de fundo do trilho */
+    border-radius: 1rem; /* Borda arredondada do trilho */
     }
 ::-webkit-scrollbar {
-    width: 10px; /* Largura da barra de rolagem vertical */
-    height: 12px; /* Altura da barra de rolagem horizontal */
+    width: 0.8rem;
     }
 ::-webkit-scrollbar-thumb {
     background-color: #8f3678; /* cor do trilho */
-    border-radius: 6px; /* arredondamento do polegar */
+    border-radius: 0.6rem; /* arredondamento do polegar */
     }
-::-webkit-scrollbar-thumb:hover {
-    background: #72154b; /* Cor do polegar ao passar o mouse */
-    }
+/* gerais */
+* {
+    translate: "no";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("img/sakura.jpg");
+    background-size: cover;
+}
+
+section {
+    padding: 6rem 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    color: #404040;
+    font-size: 1.24rem;
+    line-height: 1.1;
+    margin: 15rem;
+    margin-top: 4rem;
+}
+
+h1 {
+    font-size: 3.4rem;
+    line-height: 1.8;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 2.7rem;
+    line-height: 1.6;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 1.4;
+}
+
+p {
+    font-weight: 500;
+}
+
+a {
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+/* body */
+/* header */
+
+header {
+    display: flex;
+    border: solid #e79bdd65;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(146, 72, 121, 0.13);
+    padding: 1.5rem 2vw;
+    height: 3.8rem;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99999;
+    border-radius: 2rem;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: #ff8df5;
+}
+
+nav ul li a:hover {
+    color: #f5aae2b0;
+}
+/* main */
+
+/* hero */
+.bloco {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    background-color: #c267a456;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 65vw;
+    height: 70vh;
+    border-radius: 3rem;
+    border: solid #91487042;
+    padding: 0.4rem 1rem;
+    gap: 20rem;
+}
+
+.h2-hero {
+    color: #e675c4;
+    font-size: 3.7rem;
+}
+
+.p-hero {
+    font-size: 1.5rem;
+    color: #eb76cef8;
+    font-weight: 500;
+    line-height: 1.2;
+    width: 20vw;
+}
+
+.bloco-img-hero {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.barra-hero {
+    height: 100%;
+    width: 12rem;
+}
+
+.foto-kaory-hero {
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    transform: rotate(-90deg);
+    margin-bottom: 4rem;
+    margin-right: 4rem;
+}
+
+.container-img-hero {
+    display: flex;
+    flex-flow: column;
+    gap: 3rem;
+}
+
+/* 02 */
+
+.iframe-02 {
+    box-shadow: inset 0 0 rgba(0, 0, 0, 0.15);
+}
+
+/* 03 */
+
+.s03 {
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+}
+
+.blocos-03 {
+    display: flex;
+    background-color: #da72bb86;
+    border: solid #eb76cef8;
+    border-radius: 4rem;
+    width: 25vw;
+    height: 50vh;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 0 2rem;
+}
+
+.h2-03 {
+    color: #ff8df5;
+    font-size: 3.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.a {
+    margin-left: 5rem;
+}
+
+.p-03 {
+    color: #ffade7;
+    font-size: 1.4rem;
+}
+
+.text-locations {
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 600;
+    color: #fd98df;
+    display: flex;
+    flex-flow: row;
+    gap: 3rem;
+}
+
+.text-locations div {
+    flex-flow: column;
+}
+
+#contagem .p-03 {
+    font-size: 2rem;
+}
+
+/* footer */
