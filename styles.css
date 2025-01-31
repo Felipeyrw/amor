@@ -165,7 +165,7 @@ nav ul li a:hover {
     position: relative;
     width: 10vw;
     height: 10vw;
-    rotate: -90deg;
+    transform: rotate(360deg)
     margin-bottom: 4rem;
     margin-right: 4rem;
 }
